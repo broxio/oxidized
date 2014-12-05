@@ -35,7 +35,7 @@ class PowerConnect < Oxidized::Model
     if vars :enable
       post_login do
         send "enable\n"
-        send vars(:enable) + "\n"
+        send vars(:enable) + "\r"
       end
     end
 
